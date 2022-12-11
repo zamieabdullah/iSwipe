@@ -4,6 +4,7 @@ import Axios from 'axios';
 import Home from '../pages/Home/Home';
 import LoginSignUp from '../pages/LoginSignUp/LoginSignUp';
 import ISwipe from '../pages/iSwipe/iSwipe';
+import ViewSwipes from '../pages/ViewSwipes/ViewSwipes';
 
 export default () => {
     const [authenticated, setAuthenticated] = useState({
@@ -48,6 +49,9 @@ export default () => {
                 </Route>
                 <Route exact path='/add'>
                     <ISwipe />
+                </Route>
+                <Route exact path='/view'>
+                    <ViewSwipes />
                 </Route>
             </Switch>
         )
