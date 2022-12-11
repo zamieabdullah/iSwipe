@@ -26,3 +26,9 @@ img.right {
 img.next {
     display: none;
 }
+
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

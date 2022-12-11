@@ -3,9 +3,11 @@ const router = require("express").Router()
 
 const auth = require("./auth");
 const users = require("./users");
+const iswipe = require("./iSwipe");
 
 router.use("/user", users);
 router.use("/auth", auth);
+router.use("/iswipe", iswipe);
 
 router.get("/hello", async(req, res) => {
     try {
